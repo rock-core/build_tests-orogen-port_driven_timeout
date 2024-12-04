@@ -1,0 +1,9 @@
+<package>
+  <description brief="Test for the `timeout` parameter of `port_driven`">
+  </description>
+  <author>Sylvain Joyeux/sylvain.joyeux@tidewise.io</author>
+  <license></license>
+  <depend package="base/cmake" />
+  <depend package="base/orogen/types" />
+  <test_depend package="tools/syskit" />
+</package>

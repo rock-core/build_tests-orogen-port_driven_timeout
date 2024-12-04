@@ -1,0 +1,15 @@
+name "port_driven_timeout"
+
+import_types_from "std"
+import_types_from "base"
+import_types_from "port_driven_timeoutTypes.hpp"
+
+task_context "Task" do
+    needs_configuration
+
+    input_port "in", "port_driven_timeout/InData"
+    output_port "out", "port_driven_timeout/OutData"
+
+    port_driven timeout: 0.5
+end
+
